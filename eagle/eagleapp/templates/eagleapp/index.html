@@ -1,0 +1,23 @@
+<html>
+<body>
+  <div class="container">
+    <!-- input tag -->
+    <input id="searchbar" onkeyup="search_data()" type="text"
+        name="search" placeholder="Search Data..">
+  </div>
+</body>
+<head>
+    <title>data Display</title>
+</head>
+<body>
+    <h1>List</h1>
+    {% for i in response %}
+    <tb>Borough:{{i.borough}}&nbsp;&nbsp;&nbsp;
+        Block:{{i.block}}&nbsp;&nbsp;&nbsp;
+        Zip code:{{i.zip_code}}&nbsp;&nbsp;&nbsp;
+        Address:{{i.address}}<br>
+
+   </tb>
+    {% endfor %}
+</body>
+</html>
